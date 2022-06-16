@@ -16,8 +16,9 @@
     <!-- LOGO -->
     <link rel="shortcut icon" href="img/Group 159.png" type="image/x-icon" />
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/main.css" />
   </head>
+
   <body>
     <div class="container">
       <!-- NAV -->
@@ -31,21 +32,55 @@
 
         <div class="nav__menu">
           <ul class="nav__menu--ul">
-            <li class="nav__menu--li"><a href="#">Home</a></li>
-            <li class="nav__menu--li"><a href="#">Categories</a></li>
-            <li class="nav__menu--li"><a href="#">My Collections</a></li>
-            <li class="nav__menu--li"><a href="#">Blog</a></li>
+            <li class="nav__menu--li"><a class="nav__menu--link" href="#" target="_blank">Home</a></li>
+            <li class="nav__menu--li"><a class="nav__menu--link" href="#" target="_blank">Categories</a></li>
+            <li class="nav__menu--li"><a class="nav__menu--link" href="#" target="_blank">My Collections</a></li>
+            <li class="nav__menu--li"><a class="nav__menu--link" href="#" target="_blank">Blog</a></li>
           </ul>
         </div>
 
         <div class="nav__login">
-          <div class="nav__login--log"><a href="#">Login</a></div>
-          <div class="nav__login--singUp"><a href="#">Sing Up</a></div>
+          <div class="nav__login--log"><a class="nav__menu--link" href="#"t arget="_blank">Login</a></div>
+          <div class="nav__login--singUp"><a class="nav__menu--link" href="#" target="_blank">Sing Up</a></div>
         </div>
       </nav>
 
       <!-- HEADER -->
-      <header class="header">header</header>
+      <header class="header">
+        <div class="header__items">
+          <div class="header__items--title">
+            Awesome tools for<br>
+            Designer & Developer
+              <span class="header__items--title-dot">
+                .
+              </span>
+          </div>
+          <div class="header__items--text">
+            Antool is a web    collection of information on paid or <br>free Design and Development tools
+          </div>
+          <div class="header__items--input">
+            <form action="" method="">
+              <input type="search" id="search" class="header__input" placeholder="find more than 430+ tools..." autocomplete="off">
+              <label for="search" class="header__input-label">
+                <img src="img/search.svg" alt=""    class="header__input-img">
+              </label>
+              <button class="header__input-btn btn">Search</button>
+            </form>
+          </div>
+          <div class="header__items--media">
+            <a href="http://facebook.com" target="_blank"><img src="img/bx_bxl-facebookfb.svg" alt="facebook" class="header__items--media-fb"></a>
+            <a href="http://https://instagram.com/" target="_blank"><img src="img/bx_bxl-instagraminst.svg" alt="instagram" class="header__items--media-inst"></a>
+            <a href="http://https://twitter.com/" target="_blank"><img src="img/bx_bxl-twitterTwitter.svg" alt="twitter" class="header__items--media-tw"></a>
+          </div>
+
+        </div>
+
+        <div class="header__img">
+          <img src="img/Illustrationheader.svg" alt="" class="header__img--img">
+        </div>
+      </header>
+
+      <!-- SECTION TOOLS -->
       <section class="tools">most popular tools</section>
       <section class="company">company</section>
       <section class="newTools">Newcomer Tools</section>

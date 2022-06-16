@@ -1,0 +1,68 @@
+.header {
+    margin: 5.8rem -11rem 20rem 0;
+    display: flex;
+    justify-content: space-between;
+    &__items {
+    }
+    &__items--title {
+        font-size: 5rem;
+        font-weight: 500;
+        color: $color-h1;
+        margin-bottom: 3rem;
+    }
+    &__items--title-dot {
+        color: $color-btn;
+        margin-left: -1rem;
+    }
+    &__items--text {
+        font-size: 1.8rem;
+        margin-bottom: 6rem;
+    }
+    &__items--input {
+        
+    }
+    //BUG //TODO    поиск надо исправить, что бы не от начала было
+    &__input {
+        width: 50rem;
+        height: 6.4rem;
+        margin-bottom: 16rem;
+        border: none;
+        border-radius: 1.5rem;
+        background-color: $color-input;
+        color: $color-placeholder;
+        outline: none;
+        &::placeholder{
+            color: $color-placeholder;
+            transform: translateX(5rem);
+        }
+        
+    }
+    &__input-label {
+        
+    }
+    &__input-img {
+        transform: translate(-49rem, .9rem);
+        color: $color-placeholder;
+    }
+    &__input-btn {
+        padding: 1.8rem 3.7rem;
+        transform: scale(1rem);
+        transform: translateX(-15.1rem);
+        
+    }
+    &__img {
+    }
+    &__img--img {
+    }
+    &__items--media {
+        display: flex;
+        gap:2.4rem;
+    }
+    &__items--media-fb {
+    }
+    &__items--media-inst {
+    }
+    &__items--media-tw {
+    }
+
+}

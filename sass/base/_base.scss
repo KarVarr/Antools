@@ -1,0 +1,47 @@
+
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+html {
+  font-size: 62.5% !important;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+ 
+}
+
+
+
+.container {
+    max-width: 144rem;
+    padding: 2.6rem 10.8rem;
+    background-color: $color-page;
+    margin: 0 auto;
+    overflow: hidden;
+}
