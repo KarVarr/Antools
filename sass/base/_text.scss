@@ -16,3 +16,30 @@ html {
     color: $color-btn-text;
     font-size: 1.3rem;
 }
+
+.title {
+    font-size: 5rem;
+    font-weight: 500;
+    color: $color-h1;
+    margin-bottom: $mb3;
+}
+
+.subtitle {
+    font-size: $fz18;
+    margin-bottom: 6rem;
+}
+// Tools block
+ .text--title {
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: $color-btn-text    
+}
+.text--subtitle {
+    font-size: $fz18;
+    color: $color-block-subtitle-transparent
+}
+
+.block__text--subtitle {
+   font-size: $fz16; 
+   text-align: justify;
+}

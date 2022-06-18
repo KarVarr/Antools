@@ -1,0 +1,69 @@
+//SECTION #1 TOOLS
+.tools {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20rem;
+    margin-bottom: 10rem;
+
+    .title {
+        text-align: center;
+        margin-bottom: 2.5rem;
+    }
+    .subtitle {
+        font-weight: 400;
+        text-align: center;
+    }
+    
+&__items--blocks {
+     margin-bottom: 10rem;
+
+    .tools__items--block {
+        max-width: 39.2rem;
+        max-height: 29.4rem;
+        padding: 3.3rem;
+        border-radius: 1.5rem;
+        
+        &:hover {
+            background: radial-gradient(circle at top right, rgba(248, 126, 45, 0.177) 0%, rgba(246, 128, 49, 0.135) 8%, $color-page-tr 25%);
+            box-shadow:  0 .3rem .2rem $color-page-tr;
+            backdrop-filter: blur(50px);
+            
+        }
+        
+    }
+    .block__company {
+        display: flex;
+        align-items: center;
+        margin-bottom: $mb3;
+        
+    }
+    
+    .company--logo {
+        margin-right: $mb3;
+    }
+    
+    .block__text {
+        margin-bottom: $mb3
+    }
+    
+    .block__btn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .block__btn--like {
+        display: flex;
+        gap: 2rem; 
+        
+    }
+    
+    .block-like {
+        cursor: pointer;
+    }
+}
+
+}
+
+//SECTION #2 COMPANY
+

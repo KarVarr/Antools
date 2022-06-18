@@ -1,0 +1,17 @@
+
+.container {
+    max-width: 144rem;
+    padding: 2.6rem 10.8rem;
+    background-color: $color-page;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.tools__items--blocks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: wrap;
+    gap: 2rem;
+    
+}
