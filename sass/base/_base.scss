@@ -16,7 +16,10 @@ ol[class] {
 html {
   font-size: 62.5% !important;
 }
-
+a {
+  text-decoration: none;
+  color: inherit
+}
 /* Убираем внешние отступы */
 body,
 h1,
