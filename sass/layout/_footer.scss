@@ -1,0 +1,49 @@
+.footer {
+  display: flex;    
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: space-between;
+  gap: 15rem;
+  margin-bottom: 7rem;
+  &__logo {
+  }
+  &__logo--img {
+    display: flex;
+    place-items: center;
+    gap: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  &__logo--title {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: $color-h1;
+  }
+  &__logo--copyright {
+    margin-bottom: 2rem;
+    font-size: $fz16;
+    font-weight: 500;
+    color: $color-h1;
+  }
+  &__logo--subtitle {
+    font-size: 1.4rem;
+    color: $color-text;
+  }
+  &__nav {
+    display: flex;
+    gap: 10rem;
+  }
+  &__nav--list > ul{
+    list-style: none;
+  }
+  &__nav--list-title {
+    font-size: 2rem;
+    font-weight: 500;
+    color: $color-h1;
+  }
+  &__nav--list > ul > li {
+    font-size: $fz16;
+    list-style: none;
+    margin-bottom: 1rem;
+    cursor: pointer;
+  }
+}

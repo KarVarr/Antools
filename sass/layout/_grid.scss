@@ -109,7 +109,7 @@
   }
 }
 
-//SLIDER 
+//SECTION #4 SLIDER 
 
 .slider {
     display: flex;
@@ -167,7 +167,7 @@
         }
     }
     
-    
+    //SLIDER POINTS
     .slider__points {
         display: flex;
         gap: 1.8rem 
@@ -178,6 +178,35 @@
         height: 0.6rem;
         border-radius: .4rem;
         background-color: $color-page-slider
+    }
+    
+}
+
+//SECTION #5 CONTRIBUTOR
+
+.contributor {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    margin-bottom: $mb2;
+    text-align: center;
+
+   //BUG //TODO
+    &__input--input {
+        width: 54.9rem;
+        height: 5rem;
+        border: none;
+        border-radius: 1.5rem;
+        outline: none;
+        background-color: $color-input;
+        color: $color-placeholder;
+        display: flex;
+        &::placeholder{
+            transform: translateX(2rem);
+        }
+    }
+    &__input--btn {
+        transform: translate(22rem, -4.37rem);
     }
     
 }

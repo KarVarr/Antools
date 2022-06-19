@@ -12,14 +12,7 @@
         font-weight: 600;
         color: $color-h1;
     }
-    &__logo--img {
-    }
-    &__logo--text {
-    }
-
-    &__menu {
-        
-    }
+    
     &__menu--ul {
         display: flex;
         gap: 1rem
@@ -34,9 +27,5 @@
         display: flex;
         gap: 1rem;
     }
-    &__login--log {
-    }
-    &__login--singUp {
-    }
-
+  
 }
