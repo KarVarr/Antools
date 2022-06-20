@@ -5,13 +5,8 @@
     background-color: $color-page;
     margin: 0 auto;
     overflow: hidden;
+    @media screen and(max-width: 1040px) {
+      padding: 2.6rem 5rem;
+  }
 }
 
-.tools__items--blocks {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: wrap;
-    gap: 2rem;
-    
-}

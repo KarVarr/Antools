@@ -13,6 +13,11 @@
         color: $color-h1;
     }
     
+    &__menu {
+        @media screen and(max-width: 850px) {
+          display: none;
+        }
+    }
     &__menu--ul {
         display: flex;
         gap: 1rem
@@ -26,6 +31,23 @@
     &__login {
         display: flex;
         gap: 1rem;
+        @media screen and(max-width: 850px) {
+          display: none;
+        }
     }
   
+    .nav__burger{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        @media screen and(min-width: 850px) {
+          display: none;
+        }
+    }
+    .nav__burger--line {
+        width: 5rem;
+        height: 0.5rem;
+        background-color: $color-btn;
+        border-radius: .8rem;
+    }
 }

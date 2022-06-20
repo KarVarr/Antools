@@ -50,7 +50,6 @@ html {
     font-size: 1.4rem;
     color: $color-subtitle;
     line-height: 2;
-
     &::before{
         content: '"';
         position: absolute;
@@ -59,6 +58,12 @@ html {
         font-size: 25rem;
         opacity: .3;
         transform: rotate(210deg);
+    }
+    @media screen and(max-width: 1040px) {
+        text-align: center;
+        &::before{
+            content: '';
+        }
     }
     }
 
@@ -79,6 +84,12 @@ i {
         font-weight: 500;
         line-height: 1;
         z-index: 2;
+        @media screen and(max-width: 860px) {
+                font-size: 2rem;
+        }
+        @media screen and(max-width: 575px) {
+            display: none;
+          }
     }
 .slider__slider--span{
     font-size: 1.6rem;
