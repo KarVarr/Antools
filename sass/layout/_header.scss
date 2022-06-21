@@ -49,11 +49,16 @@
         color: $color-placeholder;
         outline: none;
         @media screen and(max-width: 485px) {
-            width: 40rem;
+            width: 47rem;
             padding-left: 1rem;
         }
         @media screen and(max-width: 435px) {
-            width: 30rem;
+            width: 39rem;
+            padding-left: .5rem;
+            
+        }
+        @media screen and(max-width: 400px) {
+            width: 33rem;
             padding-left: .5rem;
             
         }

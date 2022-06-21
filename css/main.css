@@ -4,6 +4,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 input[type=search]::-webkit-search-decoration,
@@ -256,6 +257,7 @@ i:hover {
   place-items: center;
   gap: 1.2rem;
   margin-bottom: 2rem;
+  cursor: pointer;
 }
 .footer__logo--title {
   font-size: 2.2rem;
@@ -506,10 +508,26 @@ i:hover {
 }
 
 .slider {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 20rem;
+  overflow: hidden;
+}
+.slider .fa-angle-right {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  cursor: pointer;
+  z-index: 2;
+}
+.slider .fa-angle-left {
+  position: absolute;
+  top: 50%;
+  left: 2rem;
+  cursor: pointer;
+  z-index: 2;
 }
 @media screen and (max-width: 860px) {
   .slider {
@@ -519,9 +537,12 @@ i:hover {
 .slider .slider__slider {
   display: flex;
   align-items: center;
-  gap: 10rem;
+  justify-content: center;
+  gap: 30rem;
   position: relative;
   margin-bottom: 10rem;
+  width: 100%;
+  transition: all 0.2s ease-in;
 }
 @media screen and (max-width: 575px) {
   .slider .slider__slider {
@@ -532,10 +553,22 @@ i:hover {
   display: flex;
   align-items: center;
   gap: 10rem;
+  min-width: 900px;
 }
 @media screen and (max-width: 1040px) {
   .slider .slider__slider--imgGrid {
     flex-direction: column;
+    min-width: 670px;
+  }
+}
+@media screen and (max-width: 860px) {
+  .slider .slider__slider--imgGrid {
+    min-width: 450px;
+  }
+}
+@media screen and (max-width: 740px) {
+  .slider .slider__slider--imgGrid {
+    min-width: 350px;
   }
 }
 .slider .slider__slider--imgGrid .slider__slider--img > img {
@@ -607,12 +640,16 @@ i:hover {
 .slider .slider__points {
   display: flex;
   gap: 1.8rem;
+  z-index: 1;
 }
 .slider .slider__points--point {
   width: 4.4rem;
   height: 0.6rem;
   border-radius: 0.4rem;
   background-color: rgba(81, 88, 93, 0.7490196078);
+}
+.slider .activeSlider {
+  background-color: #FF6E30;
 }
 
 .contributor {
@@ -704,13 +741,19 @@ i:hover {
 }
 @media screen and (max-width: 485px) {
   .header__input {
-    width: 40rem;
+    width: 47rem;
     padding-left: 1rem;
   }
 }
 @media screen and (max-width: 435px) {
   .header__input {
-    width: 30rem;
+    width: 39rem;
+    padding-left: 0.5rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .header__input {
+    width: 33rem;
     padding-left: 0.5rem;
   }
 }
